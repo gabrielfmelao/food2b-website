@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "../../../public/Logo Food2b.svg"
+import Logo from "@/../../public/LogoFood2B.svg"
 
 export default function Header() {
 
