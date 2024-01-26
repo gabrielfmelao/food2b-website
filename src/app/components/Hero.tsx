@@ -1,15 +1,11 @@
 import Image from "next/image";
-import DarkModeSwitcher from "./DarkModeSwitcher";
+
 import HeroBanner from "../../../public/HeroBanner.png"
 
 
 export default function Hero() {
     return (
         <>
-            {/*<!-- Button: Dark/Ligth -->*/}
-            <div className="hidden">
-                <DarkModeSwitcher />
-            </div>
             {/*<!-- Hero -->*/}
             <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
                 {/*<!-- Grid -->*/}
