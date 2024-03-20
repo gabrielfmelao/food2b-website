@@ -3,7 +3,7 @@ import CTA from "./components/CTA";
 import Hero from "./components/Hero";
 import ProductNav from "./components/ProductNav";
 import Stats from "./components/Stats";
-import Testimonial from "./components/Testimonial";
+import Testimonial from "./components/Faq";
 import WhatsApp from "./components/WhatsApp";
 
 export default function Home() {

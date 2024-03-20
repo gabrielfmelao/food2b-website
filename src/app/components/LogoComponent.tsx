@@ -2,7 +2,7 @@ import Link from "next/link";
 import Logo from '../../../public/LogoFood2B.svg'
 import Image from "next/image";
 
-export default function () {
+export default function LogoComponent() {
     return (
         <Link
             href={'/'}
