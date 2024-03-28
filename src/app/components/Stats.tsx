@@ -1,6 +1,6 @@
 export default function Stats() {
     return (
-        <div className="my-12">
+        <div className="my-12 z-0">
             {/* Features */}
             <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
                 {/* Grid */}
