@@ -7,9 +7,9 @@ export default function Hero() {
     return (
         <>
             {/*<!-- Hero -->*/}
-            <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-20">
                 {/*<!-- Grid -->*/}
-                <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center mt-[68px]">
+                <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
                     <div>
                         <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">Sua cadeia de suprimentos para <span className="text-amber-500">Hamburgueria</span></h1>
                         <p className="mt-3 text-lg text-gray-800 dark:text-gray-400">O 1# um hub de suprimento digital voltada para o nicho de hamburgueria, fornecedo uma cadeia de suprimentos de ponta-a-ponta.</p>

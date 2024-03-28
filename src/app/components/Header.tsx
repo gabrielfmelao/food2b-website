@@ -1,11 +1,9 @@
-import Image from "next/image";
-import Logo from "@/../../public/LogoFood2B.svg"
-import Partner from "@/../../public/Partner.png"
 import Link from "next/link";
 import LogoComponent from "./LogoComponent";
+import { Suspense } from "react";
+import Modal from "./Modal";
 
 export default function Header() {
-
     return (
         <>
             <header className="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full bg-white text-sm py-3 md:py-0 dark:bg-gray-800 fixed">
@@ -20,25 +18,23 @@ export default function Header() {
                                 </button>
                             </div>
                         </div>
-
                         <div id="navbar-collapse-with-animation" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
                             <div className="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-slate-700 dark:[&::-webkit-scrollbar-thumb]:bg-slate-500">
                                 <div className="flex flex-col gap-x-0 mt-5 divide-y divide-dashed divide-gray-200 md:flex-row md:items-center md:justify-end md:gap-x-7 md:mt-0 md:ps-7 md:divide-y-0 md:divide-solid dark:divide-gray-700">
-
-
-
                                     <Link
                                         href={"#AboutUs"}
                                         className="font-medium text-gray-800 hover:text-gray-600 py-3 md:py-6 dark:text-gray-200 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                                     >
                                         Sobre nós
                                     </Link>
-
-                                    <div className="pt-3 md:pt-0">
-                                        <a className="py-2.5 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-amber-500 text-white hover:bg-amber-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
-                                            Junte-se a nós
-                                        </a>
+                                    <div className="p-4">
+                                        <Link href="?modal=true">
+                                            <button type="button" className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-amber-500 text-white hover:bg-amber-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Open Modal</button>
+                                        </Link>
                                     </div>
+                                    <Suspense fallback={<>Loading...</>}>
+                                    <Modal />
+                                    </Suspense>
                                 </div>
                             </div>
                         </div>
