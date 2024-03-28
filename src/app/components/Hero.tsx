@@ -1,6 +1,9 @@
 import Image from "next/image";
 
 import HeroBanner from "../../../public/HeroBanner.png"
+import Link from "next/link";
+import { Suspense } from "react";
+import Modal from "./Modal";
 
 
 export default function Hero() {
@@ -16,10 +19,16 @@ export default function Hero() {
 
                         {/*<!-- Buttons -->*/}
                         <div className="mt-7 grid gap-3 w-full sm:inline-flex">
-                            <a className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-amber-500 text-white hover:bg-amber-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+                            <Link
+                                href="?modal=true"
+                                className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-amber-500 text-white hover:bg-amber-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                            >
                                 Junte-se a nós
                                 <svg className="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
-                            </a>
+                            </Link>
+                            <Suspense fallback={<>Loading...</>}>
+                                <Modal />
+                            </Suspense>
                         </div>
                         {/*<!-- End Buttons -->*/}
 
@@ -106,10 +115,10 @@ export default function Hero() {
 
                     <div className="relative ms-4">
                         <Image
-                        src={HeroBanner}
-                        alt="Hero Banner" 
-                        className="w-full"/>
-                      
+                            src={HeroBanner}
+                            alt="Hero Banner"
+                            className="w-full" />
+
                         <div className="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0"></div>
 
                         {/*<!-- SVG-->--*/}

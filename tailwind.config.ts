@@ -14,7 +14,9 @@ module.exports = {
 
   theme: {
     extend: {
-      // extend base Tailwind CSS utility classes
+      backgroundImage: {
+        'form-pattern': "url('/public/partner.png')"
+      }
     },
     
   },

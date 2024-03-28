@@ -14,13 +14,9 @@ export default function PrelineScript() {
   const path = usePathname();
 
   useEffect(() => {
-    import("preline/preline");
-  }, []);
-
-  useEffect(() => {
-    setTimeout(() => {
+    import("preline/preline").then(() => {
       window.HSStaticMethods.autoInit();
-    }, 100);
+    });
   }, [path]);
 
   return null;

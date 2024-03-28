@@ -29,7 +29,7 @@ export default function Header() {
                                     </Link>
                                     <div className="p-4">
                                         <Link href="?modal=true">
-                                            <button type="button" className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-amber-500 text-white hover:bg-amber-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Open Modal</button>
+                                            <button type="button" className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-amber-500 text-white hover:bg-amber-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Junte-se a nós</button>
                                         </Link>
                                     </div>
                                     <Suspense fallback={<>Loading...</>}>
