@@ -1,12 +1,12 @@
 import Link from "next/link";
 import LogoComponent from "./LogoComponent";
 import { Suspense } from "react";
-import Modal from "./Modal";
+import Modal from "@/ui/Modal";
 
 export default function Header() {
     return (
         <>
-            <header className="flex flex-wrap md:justify-start md:flex-nowrap w-full bg-white text-sm py-3 md:py-0 dark:bg-gray-800 fixed z-50">
+            <header className="flex flex-wrap md:justify-start md:flex-nowrap w-full bg-white text-sm py-3 md:py-0 dark:bg-gray-800 z-[70] fixed">
                 <nav className="max-w-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8" aria-label="Global">
                     <div className="relative md:flex md:items-center md:justify-between">
                         <div className="flex items-center justify-between">
@@ -27,14 +27,10 @@ export default function Header() {
                                     >
                                         Sobre nós
                                     </Link>
-                                    <div className="p-4">
-                                        <Link href="?modal=true">
-                                            <button type="button" className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-amber-500 text-white hover:bg-amber-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Junte-se a nós</button>
-                                        </Link>
-                                    </div>
-                                    <Suspense fallback={<>Loading...</>}>
-                                    <Modal />
-                                    </Suspense>
+                                    <button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-amber-500 text-white hover:bg-amber-500/90 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#hs-vertically-centered-modal">
+                                        Junte-se a nós
+                                        <svg className="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+                                    </button>
                                 </div>
                             </div>
                         </div>
