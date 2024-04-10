@@ -103,7 +103,7 @@ export default function Form() {
               <p className='mt-1 text-sm leading-6 text-gray-600'>
                 Forneça seus dados para que possamos entender suas necessidades
               </p>
-              <div className='mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6'>
+              <div className='mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-6'>
                 <div className="relative sm:col-span-3">
                   <input
                     type="text"
@@ -230,7 +230,7 @@ export default function Form() {
                 Informações sobre a empresa que você representa
               </p>
 
-              <div className='mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6'>
+              <div className='mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-6'>
                 <div className="relative sm:col-span-3">
                   <input
                     type="text"
@@ -340,7 +340,7 @@ export default function Form() {
             </button>
           </div>
           <div hidden={currentStep === 1} className='flex items-center justify-center pt-4'>
-            <p hidden={currentStep === 1} className="text-base">Já possui uma conta?<Link className="pl-2 text-amber-500" href={"https://loja.food2b.com.br/usuarios_cliente/sign_in"}>Entre aqui.</Link></p>
+            <p hidden={currentStep === 1} className="text-base">Já possui uma conta?<Link target="_blank" className="pl-2 text-amber-500" href={"https://loja.food2b.com.br/usuarios_cliente/sign_in"}>Entre aqui.</Link></p>
           </div>
         </div>
       </section>
