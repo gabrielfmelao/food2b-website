@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-10">
                 <div className="col-span-full lg:col-span-1">
                     <LogoComponent />
-                    <p className="mt-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">© 2024 Food2B</p>
+                    <p className="mt-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">© 2025 Food2B</p>
                 </div>
                 {/* End Col */}
 
