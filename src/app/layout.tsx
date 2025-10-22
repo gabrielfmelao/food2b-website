@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sua cadeia de suprimentos para Hamburgueria",
+  title: "Sua cadeia de suprimentos para hamburgueria",
   description: "O 1# um hub de suprimento digital voltada para o nicho de hamburgueria",
 };
 

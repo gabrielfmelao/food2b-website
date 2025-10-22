@@ -5,8 +5,8 @@ export default function Faq() {
             <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
                 {/* Title */}
                 <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-                    <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Suas dúvidas, esclarecidas</h2>
-                    <p className="mt-1 text-gray-600 dark:text-gray-400">Respostas para as perguntas mais comuns.</p>
+                    <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Suas dúvidas esclarecidas:</h2>
+                    <p className="mt-1 text-gray-600 dark:text-gray-400">Perguntas frequentes</p>
                 </div>
                 {/* End Title */}
 
@@ -21,7 +21,7 @@ export default function Faq() {
                             </button>
                             <div id="hs-basic-with-title-and-arrow-stretched-collapse-one" className="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one">
                                 <p className="text-gray-800 dark:text-gray-200">
-                                O Food2B é uma plataforma digital que conecta donos de hamburguerias a uma ampla rede de fornecedores de suprimentos para o seu negócio. Os proprietários de hamburguerias podem acessar nossa plataforma online, explorar uma variedade de produtos disponíveis, comparar preços e fazer pedidos de forma conveniente, tudo em um único lugar.
+                                A Food2B é uma plataforma digital que conecta donos de hamburguerias a uma ampla rede de fornecedores de suprimentos para o seu negócio. Os proprietários de hamburguerias podem acessar a plataforma online, explorar variedade de produtos disponíveis, comparar preços e fazer pedidos de forma conveniente, tudo em um único lugar.
                                 </p>
                             </div>
                         </div>

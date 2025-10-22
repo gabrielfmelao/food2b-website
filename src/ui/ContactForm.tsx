@@ -340,7 +340,7 @@ export default function Form() {
             </button>
           </div>
           <div hidden={currentStep === 1} className='flex items-center justify-center pt-4'>
-            <p hidden={currentStep === 1} className="text-base">Já possui uma conta?<Link target="_blank" className="pl-2 text-amber-500" href={"https://loja.food2b.com.br/usuarios_cliente/sign_in"}>Entre aqui.</Link></p>
+            <p hidden={currentStep === 1} className="text-base">Já possui uma conta?<Link target="_blank" className="pl-2 text-amber-500" href={"https://loja.food2b.neexor.com/"}>Entre aqui.</Link></p>
           </div>
         </div>
       </section>
