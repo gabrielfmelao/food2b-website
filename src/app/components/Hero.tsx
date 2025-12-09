@@ -13,7 +13,7 @@ export default function Hero() {
                 <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
                     <div>
                         <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">Sua cadeia de suprimentos para <span className="text-amber-500">Hamburgueria</span></h1>
-                        <p className="mt-3 text-lg text-gray-800 dark:text-gray-400">O 1# um hub de suprimento digital voltada para o nicho de hamburgueria, fornecedor uma cadeia de suprimentos de ponta-a-ponta.</p>
+                        <p className="mt-3 text-lg text-gray-800 dark:text-gray-400">O 1# hub de suprimento digital voltada para o nicho de hamburgueria, fornecendo uma cadeia de suprimentos de ponta-a-ponta.</p>
 
                         {/*<!-- Buttons -->*/}
                         <div className="mt-7">

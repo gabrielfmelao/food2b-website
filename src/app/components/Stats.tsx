@@ -22,7 +22,7 @@ export default function Stats() {
                             {/* Stats */}
                             <div className="p-0 lg:pl-10 ">
                                 <p className="text-3xl font-semibold text-amber-500">99.95%</p>
-                                <p className="mt-1 text-gray-500"> em compras recorrentes nos canais</p>
+                                <p className="mt-1 text-gray-500"> em compras recorrentes</p>
                             </div>
                             {/* End Stats */}
 
